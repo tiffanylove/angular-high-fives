@@ -18,8 +18,8 @@
   <p><b>Simba </b><br>Young, furry, and loves to sing Hakuna Matata</p>
 </div>
 <div ng-controller= 'HighFiveController as hfc' ng-init='hfc.newHighFive()'>
-  <h2>Total high fives...{{hfc.count}} </h2>
-  <h2>Skill level...{{hfc.skill}} </h2>
+  <h2>Total high fives: {{hfc.count}} </h2>
+  <h2>Skill level: {{hfc.skill}} </h2>
   <button ng-click='hfc.highFive(hfc.skill)'>High Five!</button>
     <!-- <div class="" ng-repeat= 'thing in hfc.fives'> -->
 

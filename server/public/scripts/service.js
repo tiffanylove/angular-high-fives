@@ -13,12 +13,14 @@ var counter = 0;
   };
 
   this.randGen = function(max,min){
+    console.log('in randGen');
     return Math.floor(Math.random()*(max-min)) + min;
   };
 
   this.highFive = function(skill){
+    console.log('in vmhighFive ');
     var quality = this.randGen(1,10);
-      if(quality >= this.skill){
+      if(quality >= skill){
       return true;
         }else {
       return false;
