@@ -4,13 +4,25 @@
     <meta charset="utf-8">
     <title>Angular Routing Magic!</title>
     <link rel="stylesheet" href="/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/style.css">
     <script src="/vendor/angular.min.js" type="text/javascript"></script>
     <script src="/vendor/angular-route.min.js" type="text/javascript"></script>
     <script src="/scripts/client.js" type="text/javascript"></script>
+    <script src="scripts/service.js" type="text/javascript"></script>
   </head>
-  <body>
 
+  <body ng-app='myApp'>
+<h1>High Fives!!</h1>
+<div class="disney">
+  <img src="http://animal-picture.com/wp-content/uploads/2014/11/Simba-lion-king.png" alt="">
+  <p><b>Simba </b><br>Young, furry, and loves to sing Hakuna Matata</p>
+</div>
+<div ng-controller= 'HighFiveController as hfc' ng-init='hfc.newHighFive()'>
+  <h2>Total high fives...{{hfc.count}} </h2>
+  <h2>Skill level...{{hfc.skill}} </h2>
+  <button ng-click='hfc.highFive(hfc.skill)'>High Five!</button>
+    <!-- <div class="" ng-repeat= 'thing in hfc.fives'> -->
 
-
+    </div>
   </body>
 </html>

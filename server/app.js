@@ -6,6 +6,7 @@ var path = require('path');
 // serve static files
 app.use(express.static(path.resolve('./server/public')));
 
+
 // server index file
 app.get('/info', function(req, res) {
     res.send("hello from the server");
